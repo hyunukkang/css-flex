@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>flex-layout2</title>
+<style>
+    body {
+        color: #999;
+    }
+    header, footer {
+        background: skyblue;
+        height: 100px;
+    }
+    section {
+        display: flex;
+        height: calc(100vh - 200px)
+    }
+    article {
+        background: teal;
+        flex: 8;
+    }
+    aside {
+        background: dodgerblue;
+        flex: 1;
+    }
+    nav {
+        background: royalblue;
+        flex: 1;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        header
+    </header>
+    <section>
+        <article>
+            article
+        </article>
+        <aside>
+            aside
+        </aside>
+        <nav>
+            nav
+        </nav>
+    </section>
+    <footer>
+        footer
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>flex review</title>
+<style>
+    .container {
+        width: 660px;
+        height: 500px;
+        border: 1px solid #000;
+        display: flex;
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        /* align-items: flex-start;  */
+        align-items: flex-end; 
+        /* flex-direction: column; */
+        flex-direction: row-reverse;
+        /* 시작점이 반대되가 됨 - flex-start = 오른쪽이 첫번째 */
+        /* 주축 파악 잘 하기 */
+        flex-wrap: wrap;
+        align-items: stretch; /* default 값 height이 늘어남*/
+        align-content: flex-start; /* items - 보다 우선순위 */
+
+    }
+    .item {
+        width: 100px;
+        height: 100px;
+        background: gold;
+        /* flex-shrink: 0; */
+        /* 1이 default, 0: false */
+        /* 1 = 적용개체의 width값의 크기를 유지 한다 */
+    }
+    .item:nth-child(1) {
+        background: coral;
+        order: 3
+    }
+    .item:nth-child(2) {
+        background: teal;
+        /* flex일때 가능 */
+        /* order default = 0 */
+        order: 1;
+        flex: 5;
+    }
+    .item:nth-child(3) {
+        order: -1;
+        background: dodgerblue;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        
+    </div>
+
+</body>
+</html>

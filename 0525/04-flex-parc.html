@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>flex-prac</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        width: 600px;
+        height: 200px;
+        border: 1px solid #000;
+        display: flex;
+    }
+    .item {
+        /* 크기 비율(width)값이 알아서 잡힘 */
+        flex: 1;
+        background: pink;
+        border: 1px solid #000;
+        display: flex;
+    }
+    .item div {
+        flex: 1;
+        border: 1px solid #000;
+    }
+    .dodger {
+        background: dodgerblue;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">
+            <div></div>
+            <div class="dodger"></div>
+        </div>
+        <div class="item">
+            <div></div>
+            <div class="dodger"></div>
+        </div>
+        <div class="item">
+            <div></div>
+            <div class="dodger"></div>
+        </div>
+    </div>
+
+</body>
+</html>

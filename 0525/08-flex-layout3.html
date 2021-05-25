@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>flex layout3</title>
+<style>
+    .wrap {
+        display: flex;
+        height: 100vh;
+    }
+    nav {
+        flex: 1;
+        background: rgba(0, 128, 0, 0.719);
+    }
+    main {
+        flex: 8;
+    }
+    header, footer {
+        height: 100px;
+        background: rgba(0, 128, 128, 0.705);
+    }
+    section {
+        display: flex;
+        height: calc(100vh - 200px);
+    }
+    article {
+        background: yellowgreen;
+        flex: 1;
+    }
+    aside {
+        background: royalblue;
+        flex: 1;
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <nav>nav</nav>
+        <main>
+            <header>
+                header
+            </header>
+            <section>
+                <article>
+                    article
+                </article>
+                <aside>
+                    aside
+                </aside>
+            </section>
+            <footer>
+                footer
+            </footer>
+        </main>
+    </div>
+
+</body>
+</html>
