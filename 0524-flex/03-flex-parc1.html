@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>flex prac1</title>
+<style>
+    .flexbox-center {
+        display: flex;
+        justify-content: center;
+        align-items: center
+        
+    }
+    body {
+        height: 100vh;
+    }
+    .wrap {
+        background: gold;
+        width: 500px;
+        height: 500px;
+    }
+    .container {
+        background: skyblue;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        /* flex-direction: row; */
+        justify-content: center; 
+        align-items: center;
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        flex-direction: column;
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+    }
+    .item {
+        width: 50px;
+        height: 50px;
+        background: pink;
+    }
+</style>
+</head>
+<!-- <body class="flexbox-center"> -->
+
+    <!-- <div class="wrap flexbox-center"> -->
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    <!-- </div> -->
+
+</body>
+</html>

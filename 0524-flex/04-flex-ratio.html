@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>flex property</title>
+<style>
+    .container {
+        /* width: 640px; */
+        background: gold;
+        display: flex;
+        height: 100px;
+        align-items: center;
+    }
+    .item {
+        height: 50px;
+        background: dodgerblue;
+        flex: 1.5;
+    }
+    .item:nth-child(1) {
+        order: 3;
+    }
+    .item:nth-child(2) {
+        background: coral;
+        flex: 5;
+        order: 1; /* 차례정함 - 1이 처음 */
+        /* 시각적인 순서만 변경 > 스크린리더화면을 읽을때 의미없음 
+        -default 값은 0*/
+        -접근성이 틀린것은 아님
+    }
+    .item:nth-child(3) {
+        background: teal;
+        flex: 1;
+        order: 2;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">box1</div>
+        <div class="item">box2</div>
+        <div class="item">box3</div>
+    </div>
+
+</body>
+</html>

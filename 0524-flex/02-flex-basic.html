@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>flex basic</title>
+<style>
+    /* common 활용되기도함 */
+    .flexbox-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        background: pink;
+        /* display: flex; */
+        /* height: 200px; */
+        /* 부모의 높이만큼 item의 높이도 늘어난다 */
+        /* justify-content: flex-end; */ /* 끝 */
+        /* justify-content: center; */ /* 중앙 */
+        /* justify-content: flex-start; default */
+
+        /* 일정비율정렬 */
+        /* justify-content: space-around;  */
+        /* justify-content: space-between; */
+        
+        /* height: 300px; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* align-items: flex-start; */
+
+        /* justify-content: center; */
+    }
+    .item {
+        /* background: teal; */
+        border: 1px solid blue;
+        /* flex 상태에서 item 은 유사 block 상태가 된다 */
+        width: 100px;
+        height: 100px;
+        background: coral;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
+        /* align-content: stretch; */
+    }
+
+    .container {
+        display: flex;
+        height: 300px;
+        width: 600px;
+        margin: 0 auto;
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        
+        /* align-content: stretch; content 가 더 우위 > align-item */
+        /* align-content: center; */
+        /* align-content: flex-end; */
+        /* align-content: flex-start; */ 
+        /* align-items: center; item- height 에서 center */
+        
+    }
+</style>
+</head>
+<body>
+
+    <!-- <div class="container flexbox-center"> -->
+        <!-- <div class="item">aa</div> -->
+        <!-- <div class="item">bbbbbb</div>
+            <div class="item">ccc</div> -->
+            <!-- <div class="item">a</div> -->
+            <!-- <div class="item">b</div> -->
+            <!-- <div class="item">c</div> -->
+            <!-- <div class="item">a</div> -->
+            <!-- <div class="item">a</div> -->
+            <!-- <div class="item">a</div> -->
+            <!-- <div class="item flexbox-center">a</div> -->
+        <!-- </div> -->
+        
+        <div class="container">
+            <div class="item">a</div>
+            <div class="item">b</div>
+            <div class="item">c</div>
+            <!-- <div class="item">d</div> -->
+            <!-- <div class="item">e</div> -->
+            <!-- <div class="item">f</div> -->
+            <!-- <div class="item">g</div> -->
+            <!-- <div class="item">h</div> -->
+            <!-- <div class="item">h</div> -->
+            <!-- <div class="item">h</div> -->
+        </div>
+</body>
+</html>

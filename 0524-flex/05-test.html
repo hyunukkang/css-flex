@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>flex</title>
+<style>
+    .container {
+        width: 500px;
+        height: 800px;
+        background: teal;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* justify-content: flex-start; */
+        /* align-content: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: stretch; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* flex-direction: column; */
+        /* align-content: space-between; */
+        /* align-content: space-around; */
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* align-content: flex-end  ; */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-wrap: wrap; */
+        /* align-content: center; */
+        /* align-content: flex-start; */
+        /* align-content: flex-end; */
+        /* flex-wrap: nowrap; */
+    }
+    .item {
+        /* width: 100px; */
+        height: 100px;
+        background: coral;
+        /* flex-wrap: nowrap; */
+        /* align-items: center; */
+        /* line-height: 100px; */
+    }
+    .c1 {
+        flex: 1.5
+    }
+    .c2 {
+        flex: 3;
+        background: dodgerblue;
+    }
+    .c3 {
+        flex: 1
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item c1">item-child-1</div>
+        <div class="item c2">item-child-2</div>
+        <div class="item c3">item-child-3</div>
+        <!-- <div class="item">item-child-4</div>
+        <div class="item">item-child-5</div>
+        <div class="item">item-child-6</div>
+        <div class="item">item-child-7</div>
+        <div class="item">item-child-8</div> -->
+    </div>
+
+</body>
+</html>
